@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donor Registration</title>
+  <link rel="stylesheet" href="style/styles.css"><link rel="stylesheet" href="style/received.css">
+</head>
+<body>
+
+    <div class="holecontainer">
+      <nav>
+
+        <img src="image/logo1.png" class="logo">
+        <ul>
+         <li><a href="#">Contact as</a></li>
+         <li><a href="#">hospitals</a></li>
+         <li><a href="#">about</a></li>
+         <li><a href="#">Help</a></li>
+         <li><a href="#show">receiver</a></li>
+         <li><a href="front.html">Back</a></li>
+        </ul>
+      </nav>
+      <h2>Blood Donor Registration</h2>
+  <div class="container">
+      <div class="row">
+        <div class="col-25">
+          <label for="name">Name :</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="fname" placeholder="Your name..." required>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email :</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="Email" name="Email" placeholder="Your email..." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="age">Age :</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="Age" name="Age" placeholder="Your age..." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="gender">Gender :</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="Gender" name="Gender" placeholder="Male (or) Female (or) Other" required>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="blood-group">Blood Group :</label>
+        </div>
+        <div class="col-75">
+          <select id="Blood_group" name="Blood_group" required onchange="bloodfunction()" >
+            <option value="">Select your blood group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="name">State :</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="State" name="State" placeholder="enter your state..." required>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="name">District :</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="District" name="District" placeholder="Current district..." required>
+          </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="phone">Phone:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="Phone" name="Phone" placeholder="Your phone number..." required>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-25">
+          <label for="address">Address:</label>
+        </div>
+        <div class="col-75">
+          <textarea id="Address" name="Address" placeholder="Your address..." required></textarea>
+        </div>
+      </div>
+      <td colspan="2"><input type="submit" name="button" id="btn" value="Add" onclick="AddRow()"></td>
+      <hr>
+    </div>
+  </div>
+</div>
+<center>
+
+<table border="5" id="show" class="content-table">
+  <thead>
+      <tr>
+          <th>names</th>
+          <th>ages</th>
+          <th>emails</th>
+          <th>phones</th>
+          <th>states</th>
+          <th>district</th>
+          <th>address</th>
+          <th>gender</th>
+          <th>blood-group</th>
+
+      </tr>
+  </thead>
+</table>
+</center>
+
+<script src="script.js"></script>
+</body>
+</html>
